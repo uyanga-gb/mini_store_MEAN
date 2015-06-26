@@ -1,0 +1,13 @@
+<div ng-controller="eachProductController">
+	<div class="row">
+		<div class="col-xs-3">
+			<img src="{{product.image}}" width="100%" alt="{{product.name}}">
+		</div>
+		<div class="col-xs-9">
+			<h3 class="text-muted">{{product.name}}</h3>
+			<p>{{product.qnty_left}} left in stock</p>
+			<p>Date added to stock: <span ng-bind="product.createdAt | date:'MM/dd/yyyy'"></span></p>
+			<button class="btn btn-danger" ng-click="removeProduct(product)">Delete</button>
+		</div>
+	</div>
+</div>

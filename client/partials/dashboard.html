@@ -1,0 +1,32 @@
+<div class="container">
+<div ng-controller='dashboardsController'>
+    <div class="row">
+       <div class="col-md-2">
+           <input id="search_bar" type="text" class="form-control" ng-model="filter_name" placeholder="search name..." placeholder="search..."/>
+            <button id="search_button" type="button" class='btn btn-info btn-sm pull-right'>Filter</button>
+        </div>    
+        <div  class="col-md-10">
+            <div  ng-repeat="product in products | filter:filter_name | orderBy:'name'" class="image_frame col-md-3">
+                <img class="img-responsive img-rounded" ng-src="{{product.image}}" alt="{{product.name}}">
+                <p class="text-center"><span ng-bind='product.name'></span></p>
+                <p class="text-warning text-center">(<span ng-bind='product.qnty_left'></span> left)</p>
+            </div>
+        </div>
+    </div>         
+    <div class="row">     
+         <div class="col-md-7 col-md-offset-3">
+             <h4 class="text-warning">Recent Orders</h4>
+            <div id="orders" ng-repeat="order in orders | filter:filter_name">
+                <p class="left">{{order.customer_name}} purchased {{order.quantity}} {{order.name}} ... ( hours ago)</p>
+            </div>
+             <center><a href="#/orders">show more...</a></center>
+             <h4 class="text-warning">New Customers</h4>
+            <div id="customers" ng-repeat="customer in customers | filter:filter_name">
+                <p class="left">{{customer.name}} joined the store. {{customer.date_now}}({{customer.hour_diff | date:'yyyy-MM-dd HH:mm:ss Z'}} days ago)</p>
+            </div>
+                <center><a href="#/customers">show more...</a></center>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+</div>

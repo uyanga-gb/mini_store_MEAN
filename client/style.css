@@ -1,0 +1,124 @@
+@font-face {
+	font-family: "BaronNeue";
+	src: url('../fonts/BaronNeue.otf');
+}
+.container_body {
+	margin-top: 120px;
+
+	height: 100%;
+	width: 100%;
+	background-color: #E1E7D1;
+	box-shadow: 1px 1px 5px #CCC;
+	margin-bottom: 0px;
+	border: solid 0 #FFF; 
+}
+h4, h5 {
+	text-decoration: underline;
+}
+button {
+	background-color: blue;
+	color: white;
+	margin-left: 5px;
+}
+input {
+	border: 2px solid black;
+}
+#search_box {
+	margin-top: 40px;
+	/*margin-left: 480px;*/
+	display: block;
+	border: grey;
+} 
+#search_bar {
+	margin-top: 30px;
+	height: 30px;
+	width: 170px;
+	position: fixed;
+}
+#search_button {
+	margin-top: 70px;
+	position: fixed;
+}
+#customer_name {
+	border: none;
+	height: 30px;
+	width: 200px;
+}
+table {
+	margin-top: 5px;
+	width: 530px;
+	border-collapse: collapse;
+	border: 2px solid white;
+}
+tr:nth-child(odd) {
+	background-color: #e89a2f;
+}
+td, th {
+	border-right: 2px solid white;
+	/*text-align: left;*/
+	height: 30px;
+	padding-left: 15px;
+}
+#remove {
+	text-decoration: none;
+	background-color: red;
+	color: white;
+	box-shadow: 2px 2px black;
+	padding: 3px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+th {
+	background-color: #B5A899;
+	text-align: center;
+} 
+.btn {
+	margin-top: 5px;
+}
+label {
+	margin-top: 10px;
+	font-weight: 300;
+	font-size: 12px;
+}
+.image_frame {
+	display: inline-block;
+	width: 200px;
+	height: 340px;
+	margin: 10px;
+	background-color: white;
+	border-radius: 20px;
+}
+.img-responsive {
+	border-radius: 10px;
+	max-height: 260px;
+	width: 180px;
+	margin-right: 0px;
+	margin-top: 10px;
+	padding: 0px;
+}
+
+.col-md-2 {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+p { 
+	padding-top: 5px;
+	line-height: 10%;
+	margin-bottom: 0px;
+	color: black;
+}
+.text-center {
+	color: #e89a2f;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+.left {
+	text-align: left;
+	color: #e89a2f;
+}
+.CellSpace {
+	display: table-cell;
+	padding-left: 10px;
+	color: white;
+}
