@@ -2,15 +2,21 @@
 	font-family: "BaronNeue";
 	src: url('../fonts/BaronNeue.otf');
 }
+body {
+	padding-top: 70px;
+}
 .container_body {
-	margin-top: 120px;
-
+	margin-top: 120px auto;
+	padding-top: 70px;
 	height: 100%;
 	width: 100%;
 	background-color: #E1E7D1;
 	box-shadow: 1px 1px 5px #CCC;
 	margin-bottom: 0px;
 	border: solid 0 #FFF; 
+}
+.row {
+	padding-top: 80px;
 }
 h4, h5 {
 	text-decoration: underline;
@@ -25,20 +31,11 @@ input {
 }
 #search_box {
 	margin-top: 40px;
-	/*margin-left: 480px;*/
+	margin-bottom: 10px;
 	display: block;
 	border: grey;
 } 
-#search_bar {
-	margin-top: 30px;
-	height: 30px;
-	width: 170px;
-	position: fixed;
-}
-#search_button {
-	margin-top: 70px;
-	position: fixed;
-}
+
 #customer_name {
 	border: none;
 	height: 30px;
