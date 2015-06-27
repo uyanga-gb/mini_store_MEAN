@@ -1,57 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Customers | Store</title>
-	<link rel="stylesheet" type="text/css" href="/style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-	<link href="assets/css/bootstrap.css" rel="stylesheet">
-	<link href="assets/css/styles.css" rel="stylesheet">
-	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
-	<link href="assets/css/animate-custom.css" rel="stylesheet"> 
-	<script src="assets/js/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-route.min.js"></script>
-	</script>
-	<script src="script.js"></script>
-	<script src="./controllers/customers.js"></script> 
-	<script src="./controllers/orders.js"></script>
-	<script src="./controllers/products.js"></script>
-	<script src="./controllers/product.js"></script>
-	<script src="./controllers/dashboard.js"></script>
-	<script src="./factories/orders_factory.js"></script>
-	<script src="./factories/customers_factory.js"></script>
-	<script src="./factories/products_factory.js"></script>
-	
-</head>
-<body ng-app='myApp' data-target="#navbar-main">
-<div id="navbar-main"> 
-	<div class="navbar navbar-inverse navbar-fixed-top">
-	   <div class="container">
-		    <div class="navbar-header">
-  		     <div class="pull-left logo">
-  	        <a class="" href="#home"><img src="assets/img/logo.png" /></a>
-  	       </div>
-  	       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> 
-           </button>
-        </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav pull-right">
-              <li><a href="#home-section" class="smoothScroll">Welcome</a></li>
-              <li> <a href="#services" class="smoothScroll">We Offer</a></li>
-              <li> <a href="#portfolio" class="smoothScroll">Our Shop</a></li>		  
-              <li> <a href="#partner" class="smoothScroll">Our Partners</a></li>
-              <li> <a href="#contact" class="smoothScroll">Contact Us</a></li>
-              <li> <a href="#/dashboard" class="smoothScroll"> Dashboard</a></li>
-              <li> <a href="#/products" class="smoothScroll"> Products</a></li>
-              <li> <a href="#/orders" class="smoothScroll"> Orders</a></li>
-              <li> <a href="#/customers" class="smoothScroll">Customer</a></li>
-          </ul>
-      </div>
-    </div>
-	</div>
-</div>
-
 <div id="home-section">
 <div id="headerwrap" name="#">
   <header class="clearfix tb"> 
@@ -252,17 +198,6 @@
           <p> +1 000 000 000</p>
 	  </div>
     </div>
-    
   </div>
 </div>
 
-	    <div ng-view="">
-	    </div>
-	    <div class="footer"></div>
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script> 
-  <script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
-  <script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
-  <script type="text/javascript" src="assets/js/custom-scripts.js"></script>
-    
-</body>
-</html>

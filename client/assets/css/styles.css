@@ -583,7 +583,7 @@ body .header {
 }
 }
 
-@media only screen and (min-device-width:992px) and (orientation : portrait) {
+@media only screen and (min-device-width:992px) and (max-device-width : 1024px) and (orientation : portrait) {
 .header {
 	background-attachment: scroll;
 }
@@ -615,4 +615,3 @@ margin: 10px auto;
 margin-top:30px;
 }
 }
-

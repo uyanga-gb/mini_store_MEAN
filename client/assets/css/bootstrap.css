@@ -202,9 +202,10 @@ th {
     content: " (" attr(title) ")";
   }
   a[href^="javascript:"]:after,
-  a[href^="#"]:after {
+  a[href^="/#"]:after {
     content: "";
   }
+  
   pre,
   blockquote {
     border: 1px solid #999;
