@@ -9,8 +9,8 @@ myApp.factory('ordersFactory', function($http) {
         })
     }
     factory.add_order = function(data, callback) {
-        data.created_date=new Date();
-        data.created_date=data.created_date.getTime();
+        // data.created_date=new Date();
+        // data.created_date=data.created_date.getTime();
        
         $http.post('/add_order', data).success(function(output) { 
             orders.push(data);

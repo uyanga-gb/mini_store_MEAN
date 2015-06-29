@@ -1,7 +1,9 @@
 <div class="container">
     <div ng-controller='ordersController'>
+        <div class="col-xs-12">
+           <h4>Add a new order</h4>
+        </div>
         <div class="row">
-        <h4>Add a new order</h4>
             <form class="form" ng-submit='new_order()'>
             <div class="col-xs-3">
                 Customer <select class="form-control" ng-model='newOrder.customer_name'>

@@ -56,8 +56,8 @@ body {
 .logo a {
 margin: 0 auto; 
 display: inline-block; 
-height: 80px;
-width: 120px;
+height: 60px;
+width: 100px;
 } 
 .logo a img{
 background:transparent;

@@ -13,7 +13,7 @@ module.exports = (function() {
        	})
 	 },	 
     add: function(req, res) { 
-    var new_order = new Order({customer_name: req.body.customer_name, name: req.body.item, quantity: req.body.quantity, date: req.body.created_date}); // when received req, it will create instance  model from Friend model with req.body.info which is originally from view and transfered all the way through
+    var new_order = new Order({customer_name: req.body.customer_name, name: req.body.item, quantity: req.body.quantity}); 
       new_order.save(function(err, response) { 
     		if(err)
     		{

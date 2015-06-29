@@ -7,7 +7,7 @@ body {
 }
 .container_body {
 	margin-top: 120px auto;
-	padding-top: 70px;
+	padding-top: 60px;
 	height: 100%;
 	width: 100%;
 	background-color: #E1E7D1;
@@ -15,8 +15,8 @@ body {
 	margin-bottom: 0px;
 	border: solid 0 #FFF; 
 }
-.row {
-	padding-top: 80px;
+.container {
+	padding-top: 30px;
 }
 h4, h5 {
 	text-decoration: underline;
@@ -81,16 +81,16 @@ label {
 .image_frame {
 	display: inline-block;
 	width: 200px;
-	height: 340px;
+	min-height: 340px;
 	margin: 10px;
 	background-color: white;
 	border-radius: 20px;
 }
 .img-responsive {
 	border-radius: 10px;
-	max-height: 260px;
+	height: 260px;
 	width: 180px;
-	margin-right: 0px;
+	margin-left: 10px;
 	margin-top: 10px;
 	padding: 0px;
 }

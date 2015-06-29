@@ -4,7 +4,7 @@ var OrderSchema = new mongoose.Schema({
   customer_name: String,
   name: String,
   quantity: Number,
-  date: Number
+  date: {type:Date, default: Date.now}
 });
 
 mongoose.model('Order', OrderSchema);

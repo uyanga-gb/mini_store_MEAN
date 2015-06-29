@@ -24,16 +24,19 @@
 				</form>
 			</div>	
 			<div  class="col-xs-10">
-				<div  class="image_frame col-xs-3" ng-repeat="product in products | filter:filter_name | orderBy:'name'">
+			<div class="row">
+				<div class="col-xs-12">
+				<div  class="image_frame" ng-repeat="product in products | filter:filter_name | orderBy:'name'">
 					<a href="#/product/{{product._id}}">
 						<img class="img-responsive img-rounded" ng-src="{{product.image}}" alt="{{product.name}}">
 						<p class="text-center"><span ng-bind='product.name'></span></p>
 					</a>
 						<p class="text-warning text-center">(<span ng-bind='product.qnty_left'></span> left)</p>
 				</div>
+				</div>
+			</div>
 			</div>
 		</div>
-
 		<div class="col-xs-12">
 			<center><a href="#">show more...</a></center>
 		</div>

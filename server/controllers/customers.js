@@ -18,7 +18,7 @@ module.exports = (function() {
         res.send('Your name is in the system, so please proceed without reentering your name!');
       }
       else {
-        var new_customer = new Customer({name: req.body.name, created_date: req.body.created_date});
+        var new_customer = new Customer({name: req.body.name});
         new_customer.save(function(err, response) {  
           if(err)
           {

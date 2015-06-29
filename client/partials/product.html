@@ -1,12 +1,12 @@
 <div ng-controller="eachProductController">
 	<div class="row">
-		<div class="col-xs-3">
+		<div class="col-xs-3 col-xs-offset-1">
 			<img src="{{product.image}}" width="100%" alt="{{product.name}}">
 		</div>
-		<div class="col-xs-9">
+		<div class="col-xs-8">
 			<h3 class="text-muted">{{product.name}}</h3>
 			<p>{{product.qnty_left}} left in stock</p>
-			<p>Date added to stock: <span ng-bind="product.createdAt | date:'MM/dd/yyyy'"></span></p>
+			<p>Date added to stock: <span ng-bind="product.created_date | date:'MM/dd/yyyy'"></span></p>
 			<button class="btn btn-danger" ng-click="removeProduct(product)">Delete</button>
 		</div>
 	</div>
